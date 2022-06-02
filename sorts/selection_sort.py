@@ -1,4 +1,4 @@
-def selectionSort(lst: list):
+def selection_Sort(lst: list):
     for last in range(len(lst) - 1, 0, -1):
         k = max_num(lst, last)  # lst[0...last] 중 가장 큰 수 lst[k] 찾기
         lst[k], lst[last] = lst[last], lst[k]
