@@ -1,4 +1,17 @@
-def insertion_sort(lst):
+"""
+삽입 정렬
+
+수행시간 
+최악의 경우 - O(n²)
+평균 - O(n²)
+최선의 경우(리스트가 이미(거의) 정렬된 상태로 입력되면) - O(n)
+
+사전 작업으로 거의 정렬된 형태에 가깝게 만든 다음 삽입 정렬을 수행하면 굉장히 빠르다.
+셸 정렬(shell_sort)이 삽입 정렬을 활용하는 대표적인 정렬 방법이다.
+"""
+
+
+def insertion_sort(lst) -> list:
     for i in range(1, len(lst)):
         temp_idx = i - 1
         insert_item = lst[i]
@@ -10,7 +23,3 @@ def insertion_sort(lst):
         lst[temp_idx + 1] = insert_item
 
     return lst
-
-
-a = [200, 1, 4, 2, 3, 2, 1, 100, 8]
-print(insertion_sort(a))

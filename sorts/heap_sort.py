@@ -1,3 +1,16 @@
+"""
+힙 정렬
+
+** 고급 정렬 알고리즘 **
+
+최악의 경우에도 O(nlogn)의 성능을 보여주는 좋은 알고리즘이다.
+힙 자료구조를 사용해서 정렬한다.
+
+수행시간 
+모든 경우 - O(nlogn)
+"""
+
+
 def heap_sort(lst: list) -> list:
     def build_heap():
         for i in range((len(lst) - 2) // 2, -1, -1):
